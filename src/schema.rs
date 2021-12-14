@@ -1,6 +1,6 @@
 table! {
     heroes (id) {
-        id -> Integer,
+        id -> Nullable<Integer>,
         name -> Varchar,
         identity -> Varchar,
         hometown -> Varchar,
