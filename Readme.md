@@ -1,6 +1,6 @@
 # Readme
 
-### Setup project
+## Setup project
 Install Rust-lang from
 - [https://www.rust-lang.org/learn/get-started](https://www.rust-lang.org/learn/get-started)
 
@@ -10,10 +10,11 @@ $ export DATABASE_URL=mysql://root:example@127.0.0.1:3306/heroes
 $ docker-compose -f stack.yml up
 ```
 
-Install library for MySQL
+Install library for MySQL via homebrew
 ```shell
 $ brew install mysql-client mysql
 ```
+If not have that, Install from [https://brew.sh/](https://brew.sh/)
 
 Export MySql Library
 ```shell
@@ -33,19 +34,20 @@ Migration database
 $ diesel setup
 $ diesel migration run
 ```
+More information [http://diesel.rs/guides/getting-started.html](http://diesel.rs/guides/getting-started.html)
 
 Run project
 ```shell
 $ cargo run
 ```
 
-Referencet from [https://hub.docker.com/_/mysql](https://hub.docker.com/_/mysql)
+Reference from [https://hub.docker.com/_/mysql](https://hub.docker.com/_/mysql)
 
-## Solve Isues
+### Solve Isues
 - error when install deisel
     -  [https://diesel.rs/guides/getting-started](https://diesel.rs/guides/getting-started)
 - connect database with docker
     - `export DATABASE_URL=mysql://root:example@127.0.0.1:3306/heroes`
 
-### Example Reference
+## Example Reference
 [https://medium.com/sean3z/building-a-restful-crud-api-with-rust-1867308352d8](https://medium.com/sean3z/building-a-restful-crud-api-with-rust-1867308352d8)
